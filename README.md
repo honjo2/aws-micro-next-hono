@@ -31,3 +31,12 @@ npm run dev
     └── app/
         └── page.tsx
 ```
+
+## AWS想定
+
+- マイクロサービス
+  - Lambda + API Gateway
+- BFF
+  - Lambda + API Gateway
+- Frontend
+  - S3 + CloudFront
