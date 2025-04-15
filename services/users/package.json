@@ -1,0 +1,14 @@
+{
+  "name": "@example/users-service",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsup src/index.ts --format esm,cjs",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "hono": "4.7.6",
+    "@hono/node-server": "1.14.1"
+  }
+}
