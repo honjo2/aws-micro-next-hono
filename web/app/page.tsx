@@ -1,5 +1,7 @@
+const origin = process.env.NEXT_PUBLIC_API_ORIGIN ?? 'http://bff:5100'
+
 export default async function Home() {
-  const res = await fetch('http://localhost:5100/api/users', { cache: 'no-store' })
+  const res = await fetch(`${origin}/api/users`, { cache: 'no-store' })
   const users = await res.json()
 
   return (

@@ -1,0 +1,20 @@
+version: "3.8"
+services:
+  users:
+    build: ./services/users
+    ports:
+      - "4001:4001"
+
+  bff:
+    build: ./bff
+    ports:
+      - "5100:5100"
+    environment:
+      USERS_ORIGIN: http://users:4001
+
+  web:
+    build: ./web
+    ports:
+      - "3000:3000"
+    environment:
+      NEXT_PUBLIC_API_ORIGIN: http://bff:5100

@@ -13,6 +13,12 @@ npm run dev
 - BFF: http://localhost:5100/api/users
 - Web: http://localhost:3000
 
+## Docker
+
+```bash
+docker-compose up --build
+```
+
 ## ディレクトリ構成
 
 ```

@@ -14,6 +14,8 @@
   },
   "devDependencies": {
     "@types/node": "22.14.1",
-    "@types/react": "19.1.2"
+    "@types/react": "19.1.2",
+    "tsup": "^8.4.0",
+    "tsx": "^4.19.3"
   }
 }
